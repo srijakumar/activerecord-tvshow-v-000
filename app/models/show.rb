@@ -16,9 +16,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.most_popular_show
-    self.each do |t|
-      t.where.highest_rating
-    end
+      self.where.highest_rating
   end
 
   def least_popular_show
