@@ -15,7 +15,7 @@ class Show < ActiveRecord::Base
     self.sum(:rating)
   end
 
-  def most_popular_show
+  def self.most_popular_show
     self.each do |t|
       t.where.highest_rating
     end
