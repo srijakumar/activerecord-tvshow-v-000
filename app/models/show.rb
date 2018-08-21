@@ -14,17 +14,17 @@ class Show < ActiveRecord::Base
   def self.ratings_sum
     self.sum(:rating)
   end
-  
-  def most_popular_show
-    Show.highest_rating
-  end
 
-  
+  def most_popular_show
+
+  end
 
   def least_popular_show
-    Show.lowest_rating
+
   end
 
+  def popular_shows
 
+  end
 
 end
