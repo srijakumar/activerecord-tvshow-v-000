@@ -20,7 +20,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.least_popular_show
-    self.where("rating DESC LIMIT 1")
+    self.where("rating ORDER BY DESC LIMIT 1")
   end
 
   def popular_shows
